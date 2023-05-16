@@ -1,3 +1,5 @@
+# *_This project is a fork from (https://github.com/manrd/ardupilot_ARGEX.git) rights reserved to the owner_*
+
 # ArduPilot Project
 
 <a href="https://ardupilot.org/discord"><img src="https://img.shields.io/discord/674039678562861068.svg" alt="Discord">
