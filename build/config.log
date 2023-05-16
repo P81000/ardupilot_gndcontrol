@@ -1,13 +1,13 @@
-# project  configured on Tue May 16 13:30:47 2023 by
+# project  configured on Tue May 16 15:23:02 2023 by
 # waf 2.0.9 (abi 20, python 3070cf0 on cygwin)
-# using /cygdrive/c/Users/maste/OneDrive/Documentos/ardupilot_ARGEX/modules/waf/waf-light configure --board sitl
+# using /cygdrive/c/Users/maste/OneDrive/Documentos/ardupilot_gndcontrol/modules/waf/waf-light configure --board sitl
 #
 ----------------------------------------
 Setting top to
-/cygdrive/c/users/maste/OneDrive/Documentos/ardupilot_ARGEX
+/cygdrive/c/Users/maste/OneDrive/Documentos/ardupilot_gndcontrol
 ----------------------------------------
 Setting out to
-/cygdrive/c/users/maste/OneDrive/Documentos/ardupilot_ARGEX/build
+/cygdrive/c/Users/maste/OneDrive/Documentos/ardupilot_gndcontrol/build
 ----------------------------------------
 Autoconfiguration
 enabled
@@ -764,7 +764,7 @@ Checking for c flags '-MMD'
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32m../../../../../users/maste/OneDrive/Documentos/ardupilot_ARGEX/build/.conf_check_05ece5f73c648d96dc52ab5f77c5e9b6/test.c[0m
+[1/1] Compiling [32mbuild/.conf_check_2147af98fb7f4d5771f7aab3c5dc9db7/test.c[0m
 
 ['/usr/bin/gcc', '-MMD', '-DWAF_BUILD=1', '../../test.c', '-c', '-otest.c.1.o']
 yes
@@ -773,7 +773,7 @@ Checking for cxx flags '-MMD'
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32m../../../../../users/maste/OneDrive/Documentos/ardupilot_ARGEX/build/.conf_check_ee13101364adfd3761b8d96ee66f41fa/test.cpp[0m
+[1/1] Compiling [32mbuild/.conf_check_9dd289f6747c6040458c5790682936a8/test.cpp[0m
 
 ['/usr/bin/g++', '-MMD', '-DWAF_BUILD=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
 yes
@@ -790,10 +790,10 @@ Checking for need to link with librt
             clock_gettime(CLOCK_REALTIME, NULL);
         }
 <==
-[1/2] Compiling [32m../../../../../users/maste/OneDrive/Documentos/ardupilot_ARGEX/build/.conf_check_4a7824b6f1e5218e5c96e1786ed102f8/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_b3b49ebd1b5b25c4086258186a603931/test.cpp[0m
 
 ['/usr/bin/g++', '-MMD', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DAP_SIM_ENABLED=1', '-DHAL_WITH_SPI=1', '-DHAL_WITH_RAMTRON=1', '-DAP_GENERATOR_RICHENPOWER_ENABLED=1', '-DAP_OPENDRONEID_ENABLED=1', '-DAP_SIGNED_FIRMWARE=0', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33m../../../../../users/maste/OneDrive/Documentos/ardupilot_ARGEX/build/.conf_check_4a7824b6f1e5218e5c96e1786ed102f8/testbuild/sitl/testprog.exe[0m
+[2/2] Linking [33mbuild/.conf_check_b3b49ebd1b5b25c4086258186a603931/testbuild/sitl/testprog.exe[0m
 
 ['/usr/bin/g++', 'test.cpp.1.o', '-otestprog.exe', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 not necessary
@@ -807,7 +807,7 @@ Checking for feenableexcept
             return feenableexcept(FE_OVERFLOW | FE_DIVBYZERO);
         }
 <==
-[1/2] Compiling [32m../../../../../users/maste/OneDrive/Documentos/ardupilot_ARGEX/build/.conf_check_788dee0e5bc83c629ebbd33cfb776186/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_61d7364b597b7ba70b06a53728c64d5b/test.cpp[0m
 
 ['/usr/bin/g++', '-MMD', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DAP_SIM_ENABLED=1', '-DHAL_WITH_SPI=1', '-DHAL_WITH_RAMTRON=1', '-DAP_GENERATOR_RICHENPOWER_ENABLED=1', '-DAP_OPENDRONEID_ENABLED=1', '-DAP_SIGNED_FIRMWARE=0', '../../test.cpp', '-c', '-otest.cpp.1.o']
 err: ../../test.cpp: In function ‘int main()’:
@@ -816,18 +816,18 @@ err: ../../test.cpp: In function ‘int main()’:
       |                    ^~~~~~~~~~~~~~
       |                    feraiseexcept
 
-from /cygdrive/c/users/maste/OneDrive/Documentos/ardupilot_ARGEX: Test does not build: Traceback (most recent call last):
-  File "/cygdrive/c/Users/maste/OneDrive/Documentos/ardupilot_ARGEX/modules/waf/waflib/Configure.py", line 584, in run_build
+from /cygdrive/c/Users/maste/OneDrive/Documentos/ardupilot_gndcontrol: Test does not build: Traceback (most recent call last):
+  File "/cygdrive/c/Users/maste/OneDrive/Documentos/ardupilot_gndcontrol/modules/waf/waflib/Configure.py", line 584, in run_build
     bld.compile()
-  File "/cygdrive/c/Users/maste/OneDrive/Documentos/ardupilot_ARGEX/modules/waf/waflib/Build.py", line 355, in compile
+  File "/cygdrive/c/Users/maste/OneDrive/Documentos/ardupilot_gndcontrol/modules/waf/waflib/Build.py", line 355, in compile
     raise Errors.BuildError(self.producer.error)
 waflib.Errors.BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 123145294496464: cxx test.cpp -> test.cpp.1.o}
+	{task 123145294427344: cxx test.cpp -> test.cpp.1.o}
  (run with -v to display more information)
 
 no
-from /cygdrive/c/users/maste/OneDrive/Documentos/ardupilot_ARGEX: The configuration failed
+from /cygdrive/c/Users/maste/OneDrive/Documentos/ardupilot_gndcontrol: The configuration failed
 ----------------------------------------
 Enabled OpenDroneID
 no
@@ -850,10 +850,10 @@ Checking for HAVE_CMATH_ISFINITE
           return std::isfinite(1.0f);
         }
 <==
-[1/2] Compiling [32m../../../../../users/maste/OneDrive/Documentos/ardupilot_ARGEX/build/.conf_check_0480091a75f8c90cb1ce643f8f100129/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_877eda6d52ab0e9f5b6585c518136fa4/test.cpp[0m
 
 ['/usr/bin/g++', '-Werror=implicit-fallthrough', '-fcheck-new', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wpointer-arith', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Wno-expansion-to-defined', '-Werror=cast-align', '-Werror=attributes', '-Werror=format-security', '-Werror=format-extra-args', '-Werror=enum-compare', '-Werror=format', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=narrowing', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=type-limits', '-Werror=undef', '-Werror=unused-result', '-Werror=shadow', '-Werror=unused-value', '-Werror=unused-variable', '-Werror=delete-non-virtual-dtor', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=parentheses', '-DARDUPILOT_BUILD', '-Wuninitialized', '-Warray-bounds', '-Wno-format-contains-nul', '-Werror=unused-but-set-variable', '-Werror=suggest-override', '-Werror=implicit-fallthrough', '-Werror=maybe-uninitialized', '-Werror=duplicated-cond', '-Werror=sizeof-pointer-div', '-D__AP_LINE__=__LINE__', '-Werror=float-equal', '-O3', '-DHAL_HAVE_AP_ROMFS_EMBEDDED_H', '-DCYGWIN_BUILD', '-MMD', '-DAP_CUSTOMCONTROL_ENABLED=1', '-DAP_DDS_ENABLED=0', '-DAP_SCRIPTING_CHECKS=1', '-DAP_SCRIPTING_ENABLED=1', '-DCONFIG_HAL_BOARD=HAL_BOARD_SITL', '-DCONFIG_HAL_BOARD_SUBTYPE=HAL_BOARD_SUBTYPE_NONE', '-DENABLE_HEAP=1', '-DENABLE_ONVIF=0', '-DHAL_PROBE_EXTERNAL_I2C_BAROS=1', '-DLUA_32BITS=1', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DAP_SIM_ENABLED=1', '-DHAL_WITH_SPI=1', '-DHAL_WITH_RAMTRON=1', '-DAP_GENERATOR_RICHENPOWER_ENABLED=1', '-DAP_OPENDRONEID_ENABLED=1', '-DAP_SIGNED_FIRMWARE=0', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33m../../../../../users/maste/OneDrive/Documentos/ardupilot_ARGEX/build/.conf_check_0480091a75f8c90cb1ce643f8f100129/testbuild/sitl/testprog.exe[0m
+[2/2] Linking [33mbuild/.conf_check_877eda6d52ab0e9f5b6585c518136fa4/testbuild/sitl/testprog.exe[0m
 
 ['/usr/bin/g++', '-fno-exceptions', '-Wl,--gc-sections', '-pthread', 'test.cpp.1.o', '-otestprog.exe', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lm', '-lwinmm']
 yes
@@ -867,10 +867,10 @@ Checking for HAVE_CMATH_ISINF
           return std::isinf(1.0f);
         }
 <==
-[1/2] Compiling [32m../../../../../users/maste/OneDrive/Documentos/ardupilot_ARGEX/build/.conf_check_b26f7deccef070c7765b6176062f2de6/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_0966987ccfb98ec19b4c52685ff07114/test.cpp[0m
 
 ['/usr/bin/g++', '-Werror=implicit-fallthrough', '-fcheck-new', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wpointer-arith', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Wno-expansion-to-defined', '-Werror=cast-align', '-Werror=attributes', '-Werror=format-security', '-Werror=format-extra-args', '-Werror=enum-compare', '-Werror=format', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=narrowing', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=type-limits', '-Werror=undef', '-Werror=unused-result', '-Werror=shadow', '-Werror=unused-value', '-Werror=unused-variable', '-Werror=delete-non-virtual-dtor', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=parentheses', '-DARDUPILOT_BUILD', '-Wuninitialized', '-Warray-bounds', '-Wno-format-contains-nul', '-Werror=unused-but-set-variable', '-Werror=suggest-override', '-Werror=implicit-fallthrough', '-Werror=maybe-uninitialized', '-Werror=duplicated-cond', '-Werror=sizeof-pointer-div', '-D__AP_LINE__=__LINE__', '-Werror=float-equal', '-O3', '-DHAL_HAVE_AP_ROMFS_EMBEDDED_H', '-DCYGWIN_BUILD', '-MMD', '-DAP_CUSTOMCONTROL_ENABLED=1', '-DAP_DDS_ENABLED=0', '-DAP_SCRIPTING_CHECKS=1', '-DAP_SCRIPTING_ENABLED=1', '-DCONFIG_HAL_BOARD=HAL_BOARD_SITL', '-DCONFIG_HAL_BOARD_SUBTYPE=HAL_BOARD_SUBTYPE_NONE', '-DENABLE_HEAP=1', '-DENABLE_ONVIF=0', '-DHAL_PROBE_EXTERNAL_I2C_BAROS=1', '-DLUA_32BITS=1', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DAP_SIM_ENABLED=1', '-DHAL_WITH_SPI=1', '-DHAL_WITH_RAMTRON=1', '-DAP_GENERATOR_RICHENPOWER_ENABLED=1', '-DAP_OPENDRONEID_ENABLED=1', '-DAP_SIGNED_FIRMWARE=0', '-DHAVE_CMATH_ISFINITE=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33m../../../../../users/maste/OneDrive/Documentos/ardupilot_ARGEX/build/.conf_check_b26f7deccef070c7765b6176062f2de6/testbuild/sitl/testprog.exe[0m
+[2/2] Linking [33mbuild/.conf_check_0966987ccfb98ec19b4c52685ff07114/testbuild/sitl/testprog.exe[0m
 
 ['/usr/bin/g++', '-fno-exceptions', '-Wl,--gc-sections', '-pthread', 'test.cpp.1.o', '-otestprog.exe', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lm', '-lwinmm']
 yes
@@ -884,10 +884,10 @@ Checking for HAVE_CMATH_ISNAN
           return std::isnan(1.0f);
         }
 <==
-[1/2] Compiling [32m../../../../../users/maste/OneDrive/Documentos/ardupilot_ARGEX/build/.conf_check_6e3b235afa6ada82705f1d6c8d26bc98/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_11efb6b5f4b37049f5249cddb17961c5/test.cpp[0m
 
 ['/usr/bin/g++', '-Werror=implicit-fallthrough', '-fcheck-new', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wpointer-arith', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Wno-expansion-to-defined', '-Werror=cast-align', '-Werror=attributes', '-Werror=format-security', '-Werror=format-extra-args', '-Werror=enum-compare', '-Werror=format', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=narrowing', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=type-limits', '-Werror=undef', '-Werror=unused-result', '-Werror=shadow', '-Werror=unused-value', '-Werror=unused-variable', '-Werror=delete-non-virtual-dtor', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=parentheses', '-DARDUPILOT_BUILD', '-Wuninitialized', '-Warray-bounds', '-Wno-format-contains-nul', '-Werror=unused-but-set-variable', '-Werror=suggest-override', '-Werror=implicit-fallthrough', '-Werror=maybe-uninitialized', '-Werror=duplicated-cond', '-Werror=sizeof-pointer-div', '-D__AP_LINE__=__LINE__', '-Werror=float-equal', '-O3', '-DHAL_HAVE_AP_ROMFS_EMBEDDED_H', '-DCYGWIN_BUILD', '-MMD', '-DAP_CUSTOMCONTROL_ENABLED=1', '-DAP_DDS_ENABLED=0', '-DAP_SCRIPTING_CHECKS=1', '-DAP_SCRIPTING_ENABLED=1', '-DCONFIG_HAL_BOARD=HAL_BOARD_SITL', '-DCONFIG_HAL_BOARD_SUBTYPE=HAL_BOARD_SUBTYPE_NONE', '-DENABLE_HEAP=1', '-DENABLE_ONVIF=0', '-DHAL_PROBE_EXTERNAL_I2C_BAROS=1', '-DLUA_32BITS=1', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DAP_SIM_ENABLED=1', '-DHAL_WITH_SPI=1', '-DHAL_WITH_RAMTRON=1', '-DAP_GENERATOR_RICHENPOWER_ENABLED=1', '-DAP_OPENDRONEID_ENABLED=1', '-DAP_SIGNED_FIRMWARE=0', '-DHAVE_CMATH_ISFINITE=1', '-DHAVE_CMATH_ISINF=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33m../../../../../users/maste/OneDrive/Documentos/ardupilot_ARGEX/build/.conf_check_6e3b235afa6ada82705f1d6c8d26bc98/testbuild/sitl/testprog.exe[0m
+[2/2] Linking [33mbuild/.conf_check_11efb6b5f4b37049f5249cddb17961c5/testbuild/sitl/testprog.exe[0m
 
 ['/usr/bin/g++', '-fno-exceptions', '-Wl,--gc-sections', '-pthread', 'test.cpp.1.o', '-otestprog.exe', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lm', '-lwinmm']
 yes
@@ -904,10 +904,10 @@ Checking for NEED_CMATH_ISFINITE_STD_NAMESPACE
           return isfinite((double)1);
         }
 <==
-[1/2] Compiling [32m../../../../../users/maste/OneDrive/Documentos/ardupilot_ARGEX/build/.conf_check_8dfcf9e39e525776159fc3eb200f9245/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_baaa3888afbed035298fe549d621846b/test.cpp[0m
 
 ['/usr/bin/g++', '-Werror=implicit-fallthrough', '-fcheck-new', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wpointer-arith', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Wno-expansion-to-defined', '-Werror=cast-align', '-Werror=attributes', '-Werror=format-security', '-Werror=format-extra-args', '-Werror=enum-compare', '-Werror=format', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=narrowing', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=type-limits', '-Werror=undef', '-Werror=unused-result', '-Werror=shadow', '-Werror=unused-value', '-Werror=unused-variable', '-Werror=delete-non-virtual-dtor', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=parentheses', '-DARDUPILOT_BUILD', '-Wuninitialized', '-Warray-bounds', '-Wno-format-contains-nul', '-Werror=unused-but-set-variable', '-Werror=suggest-override', '-Werror=implicit-fallthrough', '-Werror=maybe-uninitialized', '-Werror=duplicated-cond', '-Werror=sizeof-pointer-div', '-D__AP_LINE__=__LINE__', '-Werror=float-equal', '-O3', '-DHAL_HAVE_AP_ROMFS_EMBEDDED_H', '-DCYGWIN_BUILD', '-MMD', '-DAP_CUSTOMCONTROL_ENABLED=1', '-DAP_DDS_ENABLED=0', '-DAP_SCRIPTING_CHECKS=1', '-DAP_SCRIPTING_ENABLED=1', '-DCONFIG_HAL_BOARD=HAL_BOARD_SITL', '-DCONFIG_HAL_BOARD_SUBTYPE=HAL_BOARD_SUBTYPE_NONE', '-DENABLE_HEAP=1', '-DENABLE_ONVIF=0', '-DHAL_PROBE_EXTERNAL_I2C_BAROS=1', '-DLUA_32BITS=1', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DAP_SIM_ENABLED=1', '-DHAL_WITH_SPI=1', '-DHAL_WITH_RAMTRON=1', '-DAP_GENERATOR_RICHENPOWER_ENABLED=1', '-DAP_OPENDRONEID_ENABLED=1', '-DAP_SIGNED_FIRMWARE=0', '-DHAVE_CMATH_ISFINITE=1', '-DHAVE_CMATH_ISINF=1', '-DHAVE_CMATH_ISNAN=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33m../../../../../users/maste/OneDrive/Documentos/ardupilot_ARGEX/build/.conf_check_8dfcf9e39e525776159fc3eb200f9245/testbuild/sitl/testprog.exe[0m
+[2/2] Linking [33mbuild/.conf_check_baaa3888afbed035298fe549d621846b/testbuild/sitl/testprog.exe[0m
 
 ['/usr/bin/g++', '-fno-exceptions', '-Wl,--gc-sections', '-pthread', 'test.cpp.1.o', '-otestprog.exe', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lm', '-lwinmm']
 yes
@@ -924,10 +924,10 @@ Checking for NEED_CMATH_ISINF_STD_NAMESPACE
           return isinf((double)1);
         }
 <==
-[1/2] Compiling [32m../../../../../users/maste/OneDrive/Documentos/ardupilot_ARGEX/build/.conf_check_7ddede6adad26573fbc0884110ed9bc8/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_ad7f2da4fc7aeacf6a3afc673e5d2cb0/test.cpp[0m
 
 ['/usr/bin/g++', '-Werror=implicit-fallthrough', '-fcheck-new', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wpointer-arith', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Wno-expansion-to-defined', '-Werror=cast-align', '-Werror=attributes', '-Werror=format-security', '-Werror=format-extra-args', '-Werror=enum-compare', '-Werror=format', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=narrowing', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=type-limits', '-Werror=undef', '-Werror=unused-result', '-Werror=shadow', '-Werror=unused-value', '-Werror=unused-variable', '-Werror=delete-non-virtual-dtor', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=parentheses', '-DARDUPILOT_BUILD', '-Wuninitialized', '-Warray-bounds', '-Wno-format-contains-nul', '-Werror=unused-but-set-variable', '-Werror=suggest-override', '-Werror=implicit-fallthrough', '-Werror=maybe-uninitialized', '-Werror=duplicated-cond', '-Werror=sizeof-pointer-div', '-D__AP_LINE__=__LINE__', '-Werror=float-equal', '-O3', '-DHAL_HAVE_AP_ROMFS_EMBEDDED_H', '-DCYGWIN_BUILD', '-MMD', '-DAP_CUSTOMCONTROL_ENABLED=1', '-DAP_DDS_ENABLED=0', '-DAP_SCRIPTING_CHECKS=1', '-DAP_SCRIPTING_ENABLED=1', '-DCONFIG_HAL_BOARD=HAL_BOARD_SITL', '-DCONFIG_HAL_BOARD_SUBTYPE=HAL_BOARD_SUBTYPE_NONE', '-DENABLE_HEAP=1', '-DENABLE_ONVIF=0', '-DHAL_PROBE_EXTERNAL_I2C_BAROS=1', '-DLUA_32BITS=1', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DAP_SIM_ENABLED=1', '-DHAL_WITH_SPI=1', '-DHAL_WITH_RAMTRON=1', '-DAP_GENERATOR_RICHENPOWER_ENABLED=1', '-DAP_OPENDRONEID_ENABLED=1', '-DAP_SIGNED_FIRMWARE=0', '-DHAVE_CMATH_ISFINITE=1', '-DHAVE_CMATH_ISINF=1', '-DHAVE_CMATH_ISNAN=1', '-DNEED_CMATH_ISFINITE_STD_NAMESPACE=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33m../../../../../users/maste/OneDrive/Documentos/ardupilot_ARGEX/build/.conf_check_7ddede6adad26573fbc0884110ed9bc8/testbuild/sitl/testprog.exe[0m
+[2/2] Linking [33mbuild/.conf_check_ad7f2da4fc7aeacf6a3afc673e5d2cb0/testbuild/sitl/testprog.exe[0m
 
 ['/usr/bin/g++', '-fno-exceptions', '-Wl,--gc-sections', '-pthread', 'test.cpp.1.o', '-otestprog.exe', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lm', '-lwinmm']
 yes
@@ -944,10 +944,10 @@ Checking for NEED_CMATH_ISNAN_STD_NAMESPACE
           return isnan((double)1);
         }
 <==
-[1/2] Compiling [32m../../../../../users/maste/OneDrive/Documentos/ardupilot_ARGEX/build/.conf_check_5bd5c6259a39c3fa7ef0f2d47bcb9c13/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_df4b315795931b1680aa6bd2be5b1655/test.cpp[0m
 
 ['/usr/bin/g++', '-Werror=implicit-fallthrough', '-fcheck-new', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wpointer-arith', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Wno-expansion-to-defined', '-Werror=cast-align', '-Werror=attributes', '-Werror=format-security', '-Werror=format-extra-args', '-Werror=enum-compare', '-Werror=format', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=narrowing', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=type-limits', '-Werror=undef', '-Werror=unused-result', '-Werror=shadow', '-Werror=unused-value', '-Werror=unused-variable', '-Werror=delete-non-virtual-dtor', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=parentheses', '-DARDUPILOT_BUILD', '-Wuninitialized', '-Warray-bounds', '-Wno-format-contains-nul', '-Werror=unused-but-set-variable', '-Werror=suggest-override', '-Werror=implicit-fallthrough', '-Werror=maybe-uninitialized', '-Werror=duplicated-cond', '-Werror=sizeof-pointer-div', '-D__AP_LINE__=__LINE__', '-Werror=float-equal', '-O3', '-DHAL_HAVE_AP_ROMFS_EMBEDDED_H', '-DCYGWIN_BUILD', '-MMD', '-DAP_CUSTOMCONTROL_ENABLED=1', '-DAP_DDS_ENABLED=0', '-DAP_SCRIPTING_CHECKS=1', '-DAP_SCRIPTING_ENABLED=1', '-DCONFIG_HAL_BOARD=HAL_BOARD_SITL', '-DCONFIG_HAL_BOARD_SUBTYPE=HAL_BOARD_SUBTYPE_NONE', '-DENABLE_HEAP=1', '-DENABLE_ONVIF=0', '-DHAL_PROBE_EXTERNAL_I2C_BAROS=1', '-DLUA_32BITS=1', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DAP_SIM_ENABLED=1', '-DHAL_WITH_SPI=1', '-DHAL_WITH_RAMTRON=1', '-DAP_GENERATOR_RICHENPOWER_ENABLED=1', '-DAP_OPENDRONEID_ENABLED=1', '-DAP_SIGNED_FIRMWARE=0', '-DHAVE_CMATH_ISFINITE=1', '-DHAVE_CMATH_ISINF=1', '-DHAVE_CMATH_ISNAN=1', '-DNEED_CMATH_ISFINITE_STD_NAMESPACE=1', '-DNEED_CMATH_ISINF_STD_NAMESPACE=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33m../../../../../users/maste/OneDrive/Documentos/ardupilot_ARGEX/build/.conf_check_5bd5c6259a39c3fa7ef0f2d47bcb9c13/testbuild/sitl/testprog.exe[0m
+[2/2] Linking [33mbuild/.conf_check_df4b315795931b1680aa6bd2be5b1655/testbuild/sitl/testprog.exe[0m
 
 ['/usr/bin/g++', '-fno-exceptions', '-Wl,--gc-sections', '-pthread', 'test.cpp.1.o', '-otestprog.exe', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lm', '-lwinmm']
 yes
@@ -962,10 +962,10 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32m../../../../../users/maste/OneDrive/Documentos/ardupilot_ARGEX/build/.conf_check_3b651cdf7ee2adec7fbe6fe858cd221f/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_e4bdb971cebcfc018d63b3ebc7b71694/test.cpp[0m
 
 ['/usr/bin/g++', '-Werror=implicit-fallthrough', '-fcheck-new', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wpointer-arith', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Wno-expansion-to-defined', '-Werror=cast-align', '-Werror=attributes', '-Werror=format-security', '-Werror=format-extra-args', '-Werror=enum-compare', '-Werror=format', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=narrowing', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=type-limits', '-Werror=undef', '-Werror=unused-result', '-Werror=shadow', '-Werror=unused-value', '-Werror=unused-variable', '-Werror=delete-non-virtual-dtor', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=parentheses', '-DARDUPILOT_BUILD', '-Wuninitialized', '-Warray-bounds', '-Wno-format-contains-nul', '-Werror=unused-but-set-variable', '-Werror=suggest-override', '-Werror=implicit-fallthrough', '-Werror=maybe-uninitialized', '-Werror=duplicated-cond', '-Werror=sizeof-pointer-div', '-D__AP_LINE__=__LINE__', '-Werror=float-equal', '-O3', '-DHAL_HAVE_AP_ROMFS_EMBEDDED_H', '-DCYGWIN_BUILD', '-MMD', '-DAP_CUSTOMCONTROL_ENABLED=1', '-DAP_DDS_ENABLED=0', '-DAP_SCRIPTING_CHECKS=1', '-DAP_SCRIPTING_ENABLED=1', '-DCONFIG_HAL_BOARD=HAL_BOARD_SITL', '-DCONFIG_HAL_BOARD_SUBTYPE=HAL_BOARD_SUBTYPE_NONE', '-DENABLE_HEAP=1', '-DENABLE_ONVIF=0', '-DHAL_PROBE_EXTERNAL_I2C_BAROS=1', '-DLUA_32BITS=1', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DAP_SIM_ENABLED=1', '-DHAL_WITH_SPI=1', '-DHAL_WITH_RAMTRON=1', '-DAP_GENERATOR_RICHENPOWER_ENABLED=1', '-DAP_OPENDRONEID_ENABLED=1', '-DAP_SIGNED_FIRMWARE=0', '-DHAVE_CMATH_ISFINITE=1', '-DHAVE_CMATH_ISINF=1', '-DHAVE_CMATH_ISNAN=1', '-DNEED_CMATH_ISFINITE_STD_NAMESPACE=1', '-DNEED_CMATH_ISINF_STD_NAMESPACE=1', '-DNEED_CMATH_ISNAN_STD_NAMESPACE=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33m../../../../../users/maste/OneDrive/Documentos/ardupilot_ARGEX/build/.conf_check_3b651cdf7ee2adec7fbe6fe858cd221f/testbuild/sitl/testprog.exe[0m
+[2/2] Linking [33mbuild/.conf_check_e4bdb971cebcfc018d63b3ebc7b71694/testbuild/sitl/testprog.exe[0m
 
 ['/usr/bin/g++', '-fno-exceptions', '-Wl,--gc-sections', '-pthread', 'test.cpp.1.o', '-otestprog.exe', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lm', '-lwinmm']
 yes
@@ -980,10 +980,10 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32m../../../../../users/maste/OneDrive/Documentos/ardupilot_ARGEX/build/.conf_check_f2c0d16ab3f936b418d71bd7faee0ad2/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_fdc156ccaa66bf1eaf7bda9372921fdc/test.cpp[0m
 
 ['/usr/bin/g++', '-Werror=implicit-fallthrough', '-fcheck-new', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wpointer-arith', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Wno-expansion-to-defined', '-Werror=cast-align', '-Werror=attributes', '-Werror=format-security', '-Werror=format-extra-args', '-Werror=enum-compare', '-Werror=format', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=narrowing', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=type-limits', '-Werror=undef', '-Werror=unused-result', '-Werror=shadow', '-Werror=unused-value', '-Werror=unused-variable', '-Werror=delete-non-virtual-dtor', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=parentheses', '-DARDUPILOT_BUILD', '-Wuninitialized', '-Warray-bounds', '-Wno-format-contains-nul', '-Werror=unused-but-set-variable', '-Werror=suggest-override', '-Werror=implicit-fallthrough', '-Werror=maybe-uninitialized', '-Werror=duplicated-cond', '-Werror=sizeof-pointer-div', '-D__AP_LINE__=__LINE__', '-Werror=float-equal', '-O3', '-DHAL_HAVE_AP_ROMFS_EMBEDDED_H', '-DCYGWIN_BUILD', '-MMD', '-DAP_CUSTOMCONTROL_ENABLED=1', '-DAP_DDS_ENABLED=0', '-DAP_SCRIPTING_CHECKS=1', '-DAP_SCRIPTING_ENABLED=1', '-DCONFIG_HAL_BOARD=HAL_BOARD_SITL', '-DCONFIG_HAL_BOARD_SUBTYPE=HAL_BOARD_SUBTYPE_NONE', '-DENABLE_HEAP=1', '-DENABLE_ONVIF=0', '-DHAL_PROBE_EXTERNAL_I2C_BAROS=1', '-DLUA_32BITS=1', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DAP_SIM_ENABLED=1', '-DHAL_WITH_SPI=1', '-DHAL_WITH_RAMTRON=1', '-DAP_GENERATOR_RICHENPOWER_ENABLED=1', '-DAP_OPENDRONEID_ENABLED=1', '-DAP_SIGNED_FIRMWARE=0', '-DHAVE_CMATH_ISFINITE=1', '-DHAVE_CMATH_ISINF=1', '-DHAVE_CMATH_ISNAN=1', '-DNEED_CMATH_ISFINITE_STD_NAMESPACE=1', '-DNEED_CMATH_ISINF_STD_NAMESPACE=1', '-DNEED_CMATH_ISNAN_STD_NAMESPACE=1', '-DHAVE_ENDIAN_H=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33m../../../../../users/maste/OneDrive/Documentos/ardupilot_ARGEX/build/.conf_check_f2c0d16ab3f936b418d71bd7faee0ad2/testbuild/sitl/testprog.exe[0m
+[2/2] Linking [33mbuild/.conf_check_fdc156ccaa66bf1eaf7bda9372921fdc/testbuild/sitl/testprog.exe[0m
 
 ['/usr/bin/g++', '-fno-exceptions', '-Wl,--gc-sections', '-pthread', 'test.cpp.1.o', '-otestprog.exe', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lm', '-lwinmm']
 yes
@@ -997,7 +997,7 @@ Checking for HAVE_MEMRCHR
           return memrchr((const void *)s, 0, 3) != NULL;
         }
 <==
-[1/2] Compiling [32m../../../../../users/maste/OneDrive/Documentos/ardupilot_ARGEX/build/.conf_check_b5af525b481cc8a7874b49545ae7d4e8/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_b284da2adaac30f7e447a9e445fd9830/test.cpp[0m
 
 ['/usr/bin/g++', '-Werror=implicit-fallthrough', '-fcheck-new', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wpointer-arith', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Wno-expansion-to-defined', '-Werror=cast-align', '-Werror=attributes', '-Werror=format-security', '-Werror=format-extra-args', '-Werror=enum-compare', '-Werror=format', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=narrowing', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=type-limits', '-Werror=undef', '-Werror=unused-result', '-Werror=shadow', '-Werror=unused-value', '-Werror=unused-variable', '-Werror=delete-non-virtual-dtor', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=parentheses', '-DARDUPILOT_BUILD', '-Wuninitialized', '-Warray-bounds', '-Wno-format-contains-nul', '-Werror=unused-but-set-variable', '-Werror=suggest-override', '-Werror=implicit-fallthrough', '-Werror=maybe-uninitialized', '-Werror=duplicated-cond', '-Werror=sizeof-pointer-div', '-D__AP_LINE__=__LINE__', '-Werror=float-equal', '-O3', '-DHAL_HAVE_AP_ROMFS_EMBEDDED_H', '-DCYGWIN_BUILD', '-MMD', '-DAP_CUSTOMCONTROL_ENABLED=1', '-DAP_DDS_ENABLED=0', '-DAP_SCRIPTING_CHECKS=1', '-DAP_SCRIPTING_ENABLED=1', '-DCONFIG_HAL_BOARD=HAL_BOARD_SITL', '-DCONFIG_HAL_BOARD_SUBTYPE=HAL_BOARD_SUBTYPE_NONE', '-DENABLE_HEAP=1', '-DENABLE_ONVIF=0', '-DHAL_PROBE_EXTERNAL_I2C_BAROS=1', '-DLUA_32BITS=1', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DAP_SIM_ENABLED=1', '-DHAL_WITH_SPI=1', '-DHAL_WITH_RAMTRON=1', '-DAP_GENERATOR_RICHENPOWER_ENABLED=1', '-DAP_OPENDRONEID_ENABLED=1', '-DAP_SIGNED_FIRMWARE=0', '-DHAVE_CMATH_ISFINITE=1', '-DHAVE_CMATH_ISINF=1', '-DHAVE_CMATH_ISNAN=1', '-DNEED_CMATH_ISFINITE_STD_NAMESPACE=1', '-DNEED_CMATH_ISINF_STD_NAMESPACE=1', '-DNEED_CMATH_ISNAN_STD_NAMESPACE=1', '-DHAVE_ENDIAN_H=1', '-DHAVE_BYTESWAP_H=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
 err: ../../test.cpp: In function ‘int main()’:
@@ -1007,18 +1007,18 @@ err: ../../test.cpp: In function ‘int main()’:
       |                  memchr
 compilation terminated due to -Wfatal-errors.
 
-from /cygdrive/c/users/maste/OneDrive/Documentos/ardupilot_ARGEX: Test does not build: Traceback (most recent call last):
-  File "/cygdrive/c/Users/maste/OneDrive/Documentos/ardupilot_ARGEX/modules/waf/waflib/Configure.py", line 584, in run_build
+from /cygdrive/c/Users/maste/OneDrive/Documentos/ardupilot_gndcontrol: Test does not build: Traceback (most recent call last):
+  File "/cygdrive/c/Users/maste/OneDrive/Documentos/ardupilot_gndcontrol/modules/waf/waflib/Configure.py", line 584, in run_build
     bld.compile()
-  File "/cygdrive/c/Users/maste/OneDrive/Documentos/ardupilot_ARGEX/modules/waf/waflib/Build.py", line 355, in compile
+  File "/cygdrive/c/Users/maste/OneDrive/Documentos/ardupilot_gndcontrol/modules/waf/waflib/Build.py", line 355, in compile
     raise Errors.BuildError(self.producer.error)
 waflib.Errors.BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 123145295014480: cxx test.cpp -> test.cpp.1.o}
+	{task 123145293827536: cxx test.cpp -> test.cpp.1.o}
  (run with -v to display more information)
 
 no
-from /cygdrive/c/users/maste/OneDrive/Documentos/ardupilot_ARGEX: The configuration failed
+from /cygdrive/c/Users/maste/OneDrive/Documentos/ardupilot_gndcontrol: The configuration failed
 ----------------------------------------------
 Configured VSCode Intellisense:
 no
@@ -1072,7 +1072,7 @@ Checking for python version >= 2.7.0
 3.7.12
 ----------------------------------------------
 DC_DSDL compiler
-/cygdrive/c/users/maste/OneDrive/Documentos/ardupilot_ARGEX/modules/DroneCAN/dronecan_dsdlc/dronecan_dsdlc.py
+/cygdrive/c/Users/maste/OneDrive/Documentos/ardupilot_gndcontrol/modules/DroneCAN/dronecan_dsdlc/dronecan_dsdlc.py
 ----------------------------------------------
 Source is git repository
 yes

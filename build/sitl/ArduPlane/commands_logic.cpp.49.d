@@ -129,6 +129,7 @@ ArduPlane/commands_logic.cpp.49.o: ../../ArduPlane/commands_logic.cpp \
  libraries/GCS_MAVLink/include/mavlink/v2.0/all/../ardupilotmega/./mavlink_msg_esc_telemetry_25_to_28.h \
  libraries/GCS_MAVLink/include/mavlink/v2.0/all/../ardupilotmega/./mavlink_msg_esc_telemetry_29_to_32.h \
  libraries/GCS_MAVLink/include/mavlink/v2.0/all/../ardupilotmega/./mavlink_msg_msg_test_mav.h \
+ libraries/GCS_MAVLink/include/mavlink/v2.0/all/../ardupilotmega/./mavlink_msg_msg_received_test.h \
  libraries/GCS_MAVLink/include/mavlink/v2.0/all/../ardupilotmega/../common/common.h \
  libraries/GCS_MAVLink/include/mavlink/v2.0/all/../ardupilotmega/../common/./mavlink_msg_sys_status.h \
  libraries/GCS_MAVLink/include/mavlink/v2.0/all/../ardupilotmega/../common/./mavlink_msg_system_time.h \

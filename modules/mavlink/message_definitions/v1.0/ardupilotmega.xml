@@ -1863,10 +1863,19 @@
       <field type="uint16_t[4]" name="rpm" units="rpm">RPM (eRPM).</field>
       <field type="uint16_t[4]" name="count">count of telemetry packets received (wraps at 65535).</field>
     </message>
+    
+    <!-- AERORIVER -->
     <message id="112669" name="MSG_TEST_MAV">
       <description>This is a example.</description>
       <field type="float" name="ex1">Sample value.</field>
       <field type="char[10]" name="ex2">Sample text.</field>
     </message>
+    
+    <message id="112670" name="MSG_RECEIVED_TEST">
+      <description>This is a example.</description>
+      <field type="float" name="ex1">Sample value.</field>
+      <field type="char[10]" name="ex2">Sample text.</field>
+    </message>
+    
   </messages>
 </mavlink>

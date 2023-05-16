@@ -902,7 +902,9 @@ ap_message GCS_MAVLINK::mavlink_id_to_ap_message_id(const uint32_t mavlink_id) c
         { MAVLINK_MSG_ID_SYS_STATUS,            MSG_SYS_STATUS},
         { MAVLINK_MSG_ID_POWER_STATUS,          MSG_POWER_STATUS},
 
+        //AERORIVER
         { MAVLINK_MSG_ID_MSG_TEST_MAV,          MSG_TEST_MAV},
+        { MAVLINK_MSG_ID_MSG_RECEIVED_TEST,     MSG_RECEIVED_TEST},
         
 #if HAL_WITH_MCU_MONITORING
         { MAVLINK_MSG_ID_MCU_STATUS,            MSG_MCU_STATUS},
@@ -1876,6 +1878,10 @@ void GCS_MAVLINK::send_system_time() const
         AP_HAL::millis());
 }
 
+//AERORIVER
+/*
+  send test message
+ */
 void GCS_MAVLINK::send_msg_test_mav() const
 {
     mavlink_msg_msg_test_mav_send(
@@ -1883,6 +1889,13 @@ void GCS_MAVLINK::send_msg_test_mav() const
         32, 
         "Test msg.");
         hal.console->printf("Successs");
+}
+/* 
+    handle message received
+*/
+void GCS_MAVLINK::handle_msg_received_test(const mavlink_message_t &msg) const
+{
+    hal.console->printf("Message Received \n");
 }
 
 /*
@@ -3819,6 +3832,11 @@ void GCS_MAVLINK::handle_common_message(const mavlink_message_t &msg)
         handle_file_transfer_protocol(msg);
         break;
 
+    //AERORIVER
+    case MAVLINK_MSG_ID_MSG_RECEIVED_TEST:
+        handle_msg_received_test(msg);
+        break;
+    
 #if AP_CAMERA_ENABLED
     case MAVLINK_MSG_ID_DIGICAM_CONTROL:
     case MAVLINK_MSG_ID_GOPRO_HEARTBEAT: // heartbeat from a GoPro in Solo gimbal
@@ -5535,10 +5553,13 @@ bool GCS_MAVLINK::try_send_message(const enum ap_message id)
         send_gps_global_origin();
         break;
     
+
+    //AERORIVER
     case MSG_TEST_MAV:
         CHECK_PAYLOAD_SIZE(MSG_TEST_MAV);
         send_msg_test_mav();
         break;
+
 
 #if AP_RPM_ENABLED
     case MSG_RPM:

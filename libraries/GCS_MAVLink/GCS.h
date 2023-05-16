@@ -328,8 +328,12 @@ public:
     void send_meminfo(void);
     void send_fence_status() const;
     void send_power_status(void);
-
+    
+    //AERORIVER
+    /* --Send-- */
     void send_msg_test_mav() const;
+    /* --Receive-- */
+    void handle_msg_received_test(const mavlink_message_t &msg) const;
 
     #if HAL_WITH_MCU_MONITORING
     void send_mcu_status(void);

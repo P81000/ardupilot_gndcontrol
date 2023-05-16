@@ -667,9 +667,12 @@ static const ap_message STREAM_ADSB_msgs[] = {
     MSG_AIS_VESSEL,
     
 };
+
+//AERORIVER
 static const ap_message TEST_MESSAGE_MAVLINK[] = {
     MSG_TEST_MAV
 };
+
 
 const struct GCS_MAVLINK::stream_entries GCS_MAVLINK::all_stream_entries[] = {
     MAV_STREAM_ENTRY(STREAM_RAW_SENSORS),
