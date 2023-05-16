@@ -21,4 +21,4 @@
 # > Na função 'bool GCS_MAVLINK::try_send_message(const enum ap_message id)'
 1. Adicionar um novo caso de uso.
 
-
+## *O nome das variáveis devem ser os mesmos em todas as partes do código* 
